@@ -1,0 +1,38 @@
+/* Eléments principaux de la page */
+body
+{
+    background: ;
+    font-family: ;
+    color: ;
+}
+
+#bloc_page
+{
+    width: ;
+    margin: ;
+}
+
+/* Header */
+
+header
+{
+    background: ;
+    display: ;
+    justify-content: ;
+    align-items: ;
+
+}
+
+@media screen and (max-width: 1280px)
+{
+    /* Rédigez propriétés CSS ici */
+}
+
+#conteneur
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
