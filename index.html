@@ -26,7 +26,7 @@
                 <nav>
                     <div class="navlist">
                         <ul>
-                            <li><a href="#hebergements">Hébergements</a></li>
+                            <li class="activelist"><a href="#hebergements" class="active">Hébergements</a></li>
                             <li><a href="#activites">Activités</a></li>
                         </ul>
                         <div class="inscription">
@@ -67,49 +67,56 @@
                 <nav class="searchFilters">
                     <h2>filtres</h2>
                     <form>
-                    <div class="filtercontainer">  
+                      <div class="filtercontainer">  
+                        
                         <label class="filteritem">
                           <input type="checkbox" class="chkbox" id="economique">
-                            <span class="filterboutton">
-                          
-                          
+                            <span class="filterbutton">
                                <span class="iconfilter">
                                    <i class="fas fa-money-bill-wave"></i>
                                </span>
                                <span class="textfilter">
                                    Economique
                                </span>
-                        
                             </span>
                         </label>
 
                         <label class="filteritem">
-                            <input type="checkbox" class="chkbox" id="familial">
-
-                        <span class="filterboutton">
-                            <span class="iconfiltres">
-                               <i class="fas fa-child"></i>
-                            </span>
-                            <span>
+                          <input type="checkbox" class="chkbox" id="familial">
+                            <span class="filterbutton">
+                              <span class="iconfiltres">
+                                 <i class="fas fa-child"></i>
+                              </span>
+                            <span class="textfilter">
                             Familiale
                             </span>
                         </span>
                         </label>
                         
-                        <div class="filtres">
-                            <div class="iconfiltres">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <a href="#">Romantique</a>
-                        </div>
+                        <label class="filteritem">
+                            <input type="checkbox" class="chkbox" id="Romantique">
+                                <span class="filterbutton">
+                                    <span class="iconfiltres">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                    <span class="textfilter">
+                                     Romantique
+                                    </span>
+                                </span>
+                        </label>
 
-                        <div class="filtres">
-                            <div class="iconfiltres">
-                                <i class="fas fa-dog"></i>
-                            </div>
-                            <a href="#">Animaux autorisés</span>
-                         </div>
-                    </div>
+                        
+                        <label class="filteritem">
+                            <input type="checkbox" class="chkbox" id="Animaux autorisés">
+                            <span class="filterbutton">
+                                <span class="iconfiltres">
+                                   <i class="fas fa-dog"></i>
+                                </span>
+                                <span class="textfilter">
+                                 Animaux autorisés
+                                </span>
+                            </span>
+                        </label>
                 </form>
                 </nav>   
                          
@@ -127,135 +134,121 @@
         
             <!--HOSTING(hébergements)-->
             <div class="section2">
-            <section id="hosting">
-                <div class="hebergementscontainer"> <!--maincontainer-->
-                    <div>
+               
+                <section id="hosting">
+                    <div class="hebergementscontainer"> <!--maincontainer-->
                         <h2>Hébergements à Marseille</h2>
-                    </div>    
                         
-                    
-                    <article class="hébergementmaincard">
-                        <div class="hebergementcard">
-                        <a href="#">
-                            <figure class="hébergementmaincardfigure">
-                               <img class="hébergementmaincardimg" src="images/hebergements/4_small/aubergelacannebiere.jpg" alt="Photo de l'Auberge la Cannebière">
-                               <figcaption class="hébergementmaincardfigurelegende">
-                                   <h1 class="hebergementmaincardfigurelegendetitle">Auberge la Cannebière</h1>
-                               </figcaption>
-                            </figure>   
-                            <p class="hébergementmaincardnuit">Nuit à partir de <strong class="hébergementmaincardprice">25€</strong></p>
+                        <div class="hebergementmaincard">
+                            <div class="hebergementcard">
+                               <a href="#" class="hebergementelement">
+                                   <img src="images/hebergements/4_small/aubergelacannebiere.jpg" alt="Photo de l'Auberge la Cannebière">
+                                   <div class="details">
+                                        <h3>Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de 25<span class="hebergementmaincardprice">€</span></p>
                             
-                            <div class="hébergementmainstar">
-                                <i class="fas fa-star hébergementmaincardstaricon" data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="false"></i>
+                                        <div class="hebergementmainstar">
+                                           <i class="fas fa-star true"></i>
+                                           <i class="fas fa-star true"></i>
+                                           <i class="fas fa-star true"></i>
+                                           <i class="fas fa-star true"></i>
+                                           <i class="fas fa-star false"></i>
+                                        </div>
+                                   </div>
+                               </a>
                             </div>
-                        </a>
                         </div>
-                    </article>
             
                      
-                    <article class="hébergementmaincard">
-                        <a href="#">
-                            <figure class="hébergementmaincardfigure">
-                               <img class="hébergementmaincard img" src="images/hebergements/4_small/hotelduport.jpg" alt="Photo de l'hôtel du port">
-                               <figcaption class="hébergementmaincardfigurelegende">
-                                   <h2 class="hebergementmaincardfigurelegendetitle">hôtel du port</h2>
-                               </figcaption>
-                            </figure>   
-                            <p class="hébergementmaincardnuit">Nuit à partir de <strong class="hébergementmaincardprice">52€</strong></p>
-                            
-                            <div class="hébergementmainstar">
-                                <i class="fas fa-star hébergementmaincardstaricon" data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                            </div>
+                    <div class="hebergementcard">
+                        <a href="#"class="hebergementelement">
+                             <img src="images/hebergements/4_small/hotelduport.jpg" alt="Photo de l'hôtel du port">
+                               <div class="details">
+                                   <h3>hôtel du port</h3>
+                                   <p>Nuit à partir de 52<span class="hébergementmaincardprice">€</span></p>
+                                   
+                                   <div class="hebergementmainstar">
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                   </div>
+                                </div>
                         </a>
-                    </article>
+                    </div>
 
-                    <article class="hébergementmaincard">
-                        <a href="#">
-                            <figure class="hébergementmaincardfigure">
-                               <img class="hébergementmaincardimg" src="images/hebergements/4_small/hotellesmouettes.jpg" alt="Photo de l'hôtel les mouettes">
-                               <figcaption class="hébergementmaincardfigurelegende">
-                                   <h3 class="hebergementmaincardfigurelegendetitle">Hôtel les mouettes</h3>
-                               </figcaption>
-                            </figure>   
-                            <p class="hébergementmaincardnuit">Nuit à partir de <strong class="hébergementmaincardprice">76€</strong></p>
+                    <div class="hebergementcard">
+                        <a href="#" class="hebergementelement">
+                            <img src="images/hebergements/4_small/hotellesmouettes.jpg" alt="Photo de l'hôtel les mouettes">
+                            <div class="details">
+                                 <h3>Hôtel les mouettes</h3>
+                                 <p>Nuit à partir de 76<span class="hébergementmaincardprice">€</span></p>
                             
-                            <div class="hébergementmainstar">
-                                <i class="fas fa-star hébergementmaincardstaricon" data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="false"></i>
+                                 <div class="hebergementmainstar">
+                                     <i class="fas fa-star true"></i>
+                                     <i class="fas fa-star true"></i>
+                                     <i class="fas fa-star true"></i>
+                                     <i class="fas fa-star true"></i>
+                                     <i class="fas fa-star false"></i>
+                                 </div>
                             </div>
                         </a>
-                    </article>
+                    </div>
 
-                    <article class="hébergementmaincard">
-                        <a href="#">
-                            <figure class="hébergementmaincardfigure">
-                               <img class="hébergementmaincardimg" src="images/hebergements/4_small/hoteldelamer.jpg" alt="Photo de l'hôtel de la mer">
-                               <figcaption class="hébergementmaincardfigurelegende">
-                                   <h4 class="hebergementmaincardfigurelegendetitle">Hôtel de la mer</h4>
-                               </figcaption>
-                            </figure>   
-                            <p class="hébergementmaincardnuit">Nuit à partir de <strong class="hébergementmaincardprice">46€</strong></p>
+                    <div class="hebergementcard">
+                        <a href="#" class="hebergementelement">
+                            <img src="images/hebergements/4_small/hoteldelamer.jpg" alt="Photo de l'hôtel de la mer">
+                               <div class="details">
+                                   <h3>Hôtel de la mer</h3>
+                                   <p>Nuit à partir de 46<span class="hébergementmaincardprice">€</span></p>
                             
-                            <div class="hébergementmainstar">
-                                <i class="fas fa-star hébergementmaincardstaricon" data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="false"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="false"></i>
-                            </div>
+                                    <div class="hebergementmainstar">
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star false"></i>
+                                        <i class="fas fa-star false"></i>
+                                    </div>
+                               </div>
                         </a>
-                    </article>
+                    </div>
 
-                    <article class="hébergementmaincard">
-                        <a href="#">
-                            <figure class="hébergementmaincardfigure">
-                               <img class="hébergementmaincardimg" src="images/hebergements/4_small/aubergelepannier.jpg" alt="Photo de l'auberge le pannier" >
-                               <figcaption class="hébergementmaincardfigurelegende">
-                                   <h5 class="hebergementmaincardfigurelegendetitle">Auberge le pannier</h5>
-                               </figcaption>
-                            </figure>   
-                            <p class="hébergementmaincardnuit">Nuit à partir de <strong class="hébergementmaincardprice">23€</strong></p>
+                    <div class="hebergementcard">
+                        <a href="#" class="hebergementelement">
+                           <img src="images/hebergements/4_small/aubergelepannier.jpg" alt="Photo de l'auberge le pannier" >
+                             <div class="details"> 
+                                   <h3>Auberge le pannier</h3>
+                                   <p>Nuit à partir de 23<span class="hébergementmaincardprice">€</span></p>
                             
-                            <div class="hébergementmainstar">
-                                <i class="fas fa-star hébergementmaincardstaricon" data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="false"></i>
+                                   <div class="hebergementmainstar">
+                                      <i class="fas fa-star true"></i>
+                                      <i class="fas fa-star true"></i>
+                                      <i class="fas fa-star true"></i>
+                                      <i class="fas fa-star true"></i>
+                                      <i class="fas fa-star false"></i>
+                                   </div>
                             </div>
                         </a>
-                    </article>
+                    </div>
 
-                    <article class="hébergementmaincard">
-                        <a href="#">
-                            <figure class="hébergementmaincardfigure">
-                               <img class="hébergementmaincardimg" src="images/hebergements/4_small/hotelchezamina.jpg" alt="Photo de l'hôtel chez amina">
-                               <figcaption class="hébergementmaincardfigurelegende">
-                                   <h6 class="hebergementmaincardfigurelegendetitle">Hôtel chez amina</h6>
-                               </figcaption>
-                            </figure>   
-                            <p class="hébergementmaincardnuit">Nuit à partir de <strong class="hébergementmaincardprice">96€</strong></p>
+                    <div class="hebergementcard">
+                        <a href="#" class="hebergementelement">
+                            <img src="images/hebergements/4_small/hotelchezamina.jpg" alt="Photo de l'hôtel chez amina">
+                                <div class="details">
+                                   <h3>Hôtel chez amina</h3>
+                                   <p>Nuit à partir de 96<span class="hébergementmaincardprice">€</span></p>
                             
-                            <div class="hébergementmainstar">
-                                <i class="fas fa-star hébergementmaincardstaricon" data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                                <i class="fas fa-star hébergementmaincardstaricon"data-active="true"></i>
-                            </div>
+                                   <div class="hébergementmainstar">
+                                        <i class="fas fa-star data-active="true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                        <i class="fas fa-star true"></i>
+                                   </div>
+                               </div>
                         </a>
-                    </article>
+                    </div>
                     <a class="hebergementmainafficherplus" href="#">Afficher plus</a>
                </div>
                </section>
