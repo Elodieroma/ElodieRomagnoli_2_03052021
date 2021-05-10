@@ -3,10 +3,10 @@
     
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1;0">
         <title>Reservia</title>
+        <link rel="stylesheet" href="styles.css"/>
         <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -15,8 +15,9 @@
     <body>
         
         <!--HEADER-->
-        <div class="ensemble">
-        <header class="header">
+        <!--DIVENSEMBLE-->
+        <div class="ensemble"> 
+          <header class="header">
             <nav class="wrap">
              
                 <!--logo reservia-->
@@ -68,8 +69,9 @@
                     <div class="filters">
                       <div class="filter-cat eco">  
                         <i class="fas fa-money-bill-wave iconfilter"></i>
-                        <a href="#" class="textfilter">Economique</a>
-                      </div class="filter-cat family">
+                        <a href="#" class="textfilt">Economique</a>
+                      </div>
+                      <div class="filter-cat family">   
                          <i class="fas fa-child iconfilter"></i>
                          <a href="#" class="textfilt">Familiale</a>
                       </div>
@@ -96,11 +98,11 @@
             </header>
             <!--SECTION1SEARCH-->    
         
-            <!--SECTION2HOSTINGPOPULAR-->
-            <div class="section2">
-               
+            <!--MAINHOSTINGPOPULARACTIVITY-->
+            <main class="main">
+                 <!--HOSTING-->
                 <section id="hosting" class="group">
-                    <div class="hebergementscontainer"> <!--maincontainer-->
+                    <div class="hebergementscontainer">
                         <h2>Hébergements à Marseille</h2>
                         
                         
@@ -171,7 +173,8 @@
                                     <div class="details"> 
                                         <h3>Auberge le pannier</h3>
                                         <p>Nuit à partir de 23<span class="hebergementmaincardprice">€</span></p>
-                                    <div class="hebergementmainstar">
+                                    </div>
+                                        <div class="hebergementmainstar">
                                       <i class="fas fa-star true"></i>
                                       <i class="fas fa-star true"></i>
                                       <i class="fas fa-star true"></i>
@@ -185,7 +188,8 @@
                                  <div class="details">
                                     <h3>Hôtel chez amina</h3>
                                     <p>Nuit à partir de 96<span class="hebergementmaincardprice">€</span></p>
-                                 <div class="hebergementmainstar">
+                                 </div>
+                                <div class="hebergementmainstar">
                                     <i class="fas fa-star true"></i>
                                     <i class="fas fa-star true"></i>
                                     <i class="fas fa-star true"></i>
@@ -195,7 +199,7 @@
                                 </a>
                             </div>
                             <div>
-                            <a class="mainafficherplus" href="#">Afficher plus</a>
+                            <a href="#" class="mainafficherplus">Afficher plus</a>
                             </div>
                         </div>
         
@@ -220,7 +224,7 @@
                                         matin</h3>
                                       <p>Nuit à partir de 128<span class="price">€</span></p>
                                       <div class="popularmainstar">
-                                        <i class="fas fa-star full"></i>
+                                        <i class="fas fa-star true"></i>
                                         <i class="fas fa-star true"></i>
                                         <i class="fas fa-star true"></i>
                                         <i class="fas fa-star true"></i>
@@ -276,10 +280,10 @@
                   
                   <div class="groupecardactivity">
             
-                          <div class="activitysingle carte">
+                          <div class="blocactivity carte">
                                <a href="#" class="activitycard">
                                    <img src="images/activites/4_small/vieuxport.jpg" alt="Photo du vieux port" class="location1and4">
-                                   <div nameactivity>
+                                   <div class="nameactivity">
                                        <h4>Vieux Port</h4>
                                    </div>
                                </a>
@@ -296,7 +300,7 @@
                             </div>
                             <div class="carte activity3">
                                 <a href="#" class="activitycard">
-                                    <img src="images/activites/4_small/iledufrioul.jpg" alt="Photo île du frioul"class="location1and4">
+                                    <img src="images/activites/4_small/iledufrioul.jpg" alt="Photo île du frioul"class="location3">
                                     <div class="nameactivity">  
                                        <h4>Ile du Frioul</h4>
                                     </div>
@@ -305,9 +309,9 @@
                            </div>
                        
                           
-                           <div class="activtysingle carte">
+                           <div class="blocactivity carte">
                              <a href="#" class="activitycard"></a>
-                                <img src="images/activites/4_small/parcnationaldescalanques.jpg" alt="Photo parc national des calanques" class="location5">
+                                <img src="images/activites/4_small/parcnationaldescalanques.jpg" alt="Photo parc national des calanques" class="location1and4">
                                 <div class="nameactivity">
                                    <h4>Parc national des Calanques</h4>
                                 </div>
@@ -317,7 +321,7 @@
                            <div class="blocactivity">
                              <div class="carte activity5">
                                 <a href="#" class="activitycard">
-                                  <img src="images/activites/4_small/notredamedelagarde.jpg" alt="Photo notre dame de la garde" class="location6">
+                                  <img src="images/activites/4_small/notredamedelagarde.jpg" alt="Photo notre dame de la garde" class="location5">
                                   <div class="nameactivity"> 
                                      <h4>Notre-Dame-de-la-Garde</h4>
                                    </div>
@@ -325,7 +329,7 @@
                             </div>
                             <div class="carte activity6">      
                                 <a href="#" class="activitycard">
-                                  <img src="images/activites/4_small/parclongchamp.jpg"alt="Photo parc longchamp">
+                                  <img src="images/activites/4_small/parclongchamp.jpg"alt="Photo parc longchamp" class="location6">
                                   <div class="nameactivity">
                                      <h4>Parc Longchamp</h4>
                                   </div> 
@@ -336,10 +340,10 @@
             
             </section>
             <!--ACTIVITY-->    
-        </section>
+        </main>
             <!--Main-->
-            </div>
-          
+    </div>
+     <!--DIVENSEMBLE-->     
        
         <footer>
             <div class="footersearch">
