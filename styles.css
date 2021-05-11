@@ -863,6 +863,46 @@ display: none;
      .searchtext h1{
           font-size: 20px;
      }
+     .search .searchbuttontext{
+          position: relative;
+          right: 7px;
+          margin-right: 0;
+          width: 71%;
+          height: 52px;
+          border: 1px solid #f2f2f2;
+          font-size: 15px;
+          font-weight: bold;
+
+     }
+     .mainnav .active::after {
+          margin-left: -55px;
+
+     }
+     .searchbutton{
+          position: relative;
+          display: block;
+          bottom: 55px;
+          left: 85%;
+          background-color: #0065fc ;
+          height: 45px;
+          width: 45px;
+          border-radius: 10px;
+          line-height: 40px;
+          border: none;
+          cursor: pointer;
+
+
+
+     }
+     .filters{
+          display: flex;
+          margin-left: -55px;
+          flex-direction: column;
+          flex-wrap: wrap;
+     }
+     .family{
+          margin-left: 0;
+     }
      
 }
 @media  screen and (max-width:320px) {
@@ -945,6 +985,6 @@ display: none;
 
 
      
-}
+
 
 
