@@ -859,10 +859,92 @@ display: none;
      margin: 0;
 }
 }
-@media  screen and (max-width:346px) {
+@media  sreen and (max-width:360px) {
+     .searchtext h1{
+          font-size: 20px;
+     }
+     
+}
+@media  screen and (max-width:320px) {
+     .mainnav .active::after{
+          margin-left: -100px;
+     }
+     
+     .mainnav .activ::after{
+          margin-left: -60px;
+     }
+     .searchbutton{
+          position: relative;
+          bottom: 45px;
+          left: 83%;
+          display: block;
+          background-color: #0065fc;
+          height: 45px;
+          width: 40px;
+          border-radius: 10px;
+          line-height: 45px;
+          border: none;
+          cursor: pointer;
+     }
+     .filters{
+          margin-left: 20px;
+     }
+     
      
 }
      
+@media screen and (max-width: 280px) {
+     .mainnav {
+          margin-left: -14px;
+     }
+     .mainnav .active::after{
+          margin-left: -55px;
+     }
+     .mainnav .activ::after{
+          margin-left: -35px;
+     }
+     .searchtext{
+          position: relative;
+          top: 0;
+     }
+     .searchbutton{
+          height: 45px;
+          width: 45px;
+          border-radius: 10px;
+          line-height: 30px;
+     }
+      .search .searchbuttontext{
+           font-size: 12px;
+      }
+      .searchchamp{
+           margin-top: 28px;
+      }
+      .searchresulticon{
+           margin-top: 30px;
+      }
+      .detailcard h3, .detailcard {
+           font-size: 0,7rem;
+      }
+      .detailcard p{
+           margin-bottom: 0;
+      }
+      .asidetitle{
+           font-size: 17px;
+      }
+      .hebergementscontainer h2{
+           font-size: 17px;
 
+      }
+      .activitytitle{
+
+          font-size: 17px;
+      }
+
+      }
+
+
+
+     
+}
 
 
