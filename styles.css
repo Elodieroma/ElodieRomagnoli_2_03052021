@@ -72,7 +72,7 @@ header{
      padding: 65px 30px 10px;
      color: #0065fc;
 }
-.mainnav .active:hover{
+.mainnav .active{
      border-top: 2px solid #0065fc;
 }
 .mainnav .activ{
@@ -152,7 +152,6 @@ header{
 {
      display: flex;
      align-items: center;
-     justify-content: flex-start;
      flex-wrap: wrap;
      margin-top: 40px;
 
@@ -168,8 +167,10 @@ header{
      margin-left: 20px;
      border: 2px solid #d9d9d9;
      border-radius: 30px;
-     height: 54px;
+     height: 50px;
      border-left: none ;
+     display: flex;
+     align-items: center;
 }
 .filter-cat:hover{
      background:#deebff ;
@@ -182,6 +183,10 @@ header{
      line-height: 45px;
      text-align: center;
      border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
 
 }
 .textfilt{text-decoration: none;
@@ -189,6 +194,7 @@ header{
      padding-left: 5px;
      font-weight: bold;
      font-size: 16px;
+     text-align: center;
 
 }
 .textfilt:hover{
@@ -219,11 +225,12 @@ header{
 .searchresulticon .info {
      border: 2px solid #f2f2f2;
      border-radius: 50%;
-     width: 35px;
-     height: 35px;
+     width: 30px;
+     height: 30px;
      line-height: 35px;
      text-align: center ;
      color: #0065fc;
+
 }
 .searchresulticon p{
      margin-left: 10px;
@@ -240,12 +247,11 @@ header{
 .group{
       display: flex;
       justify-content: space-around;
-      margin: 0 auto;
+      margin: -20px;
 }
 .hebergementscontainer{
      background-color: #f2f2f2;
      flex: 100%;
-     height: 200px;
      margin: 0 auto;
      padding: 25px 20px;
      border-radius: 15px;
@@ -331,12 +337,11 @@ header{
      flex: 1;
      margin-left: 25px;
      margin-top: 35px;
-}
-.mainafficherplus a{
      text-decoration: none;
      color: #000;
      font-weight: bold;
      font-size: 18px;
+     position:absolute
 
 }
 
@@ -424,6 +429,9 @@ color: #000;
      font-size: 25px;
      margin: 5px 10px 0 0;
 }
+.price{
+     font-weight: bold;
+}
 
 /*--Section3 ACTIVITY--*/
 .groupecardactivity{
@@ -432,7 +440,7 @@ color: #000;
      justify-content: space-between;
      height: 430px;
      box-sizing: border-box;
-     width: 90%;
+     width:100%;
 }
 .activitysingle{
      width: 23%;
@@ -508,6 +516,7 @@ color: #000;
      margin: auto;
      padding: 0 3rem;
      box-sizing: border-box ;
+     justify-content: space-between;
 }
 .footerdescript .footerdescriptlogt .footerassist {
      width: 30%;
@@ -545,7 +554,7 @@ footer h3{
      }
      
      .popularcard{
-          margin: 60px 5px 0;
+          margin: 30px 5px 0;
 
      }
 
