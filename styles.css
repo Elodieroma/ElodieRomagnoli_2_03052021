@@ -647,6 +647,7 @@ footer h3{
      }
 
 }
+
 @media only screen and (max-width:768px)
 {
  header{
@@ -748,23 +749,27 @@ display: none;
      flex-wrap: wrap;
 }
 .filter-cat{
-     display: block;
+     display: flex;
      margin: 20px 0 0;
+
+
 }
 .eco{
      width: 160px;
 }
 .family{
-     margin-left: 10px;
+     margin-left: 170px;
+     margin-bottom: 0px;
 }
 .textfilt{
      font-size: 13px;
 }
 .searchresulticon .info{
-     width: 25px;
-     height: 25px;
+     width: 20px;
+     height: 20px;
      line-height: 25px ;
      font-size: 10px;
+     
 }
 .searchresulticon p {
      font-size: 14px;
@@ -808,13 +813,16 @@ display: none;
 .hebergementmainstar{
      margin-bottom: 20px;
 }
+.details{
+     margin-left: 0%;
+}
 .mainafficherplus{
-     margin-top: 25px;
+     margin-top: 35px;
 }
 .hebergementpopular{
-     width: 95%;
+     width: 100%;
      margin-bottom: 50px;
-     margin-left: -3px;
+     margin-left: 0px;
 }
 .popularcard{
      width: 100%;
@@ -824,6 +832,8 @@ display: none;
 }
 .detailcard{
      font-size: 0,6rem;
+     margin-left: 270px;
+
 }
 .detailcard h3{
      font-size: 0,7rem;
@@ -834,6 +844,9 @@ display: none;
 .popularmainstar{
      margin-bottom: 25%;
 }
+.activitytitle{
+     margin: 100px 0px 30px;
+}
 .groupecardactivity{
      display: grid;
      height: auto;
@@ -843,9 +856,15 @@ display: none;
 .blocactivity{
      width: auto;
 }
+.location1and4{
+     border-radius: 10px;
+}
 .carte img{
      width: 100%;
      height: 200px;
+
+     
+     
 }
 .carte{
      margin-bottom: 190px;
@@ -868,7 +887,9 @@ display: none;
      margin: 0;
 }
 }
-@media  sreen and (max-width:360px) {
+
+   
+@media only screen and (max-width:375px) {
      .searchtext h1{
           font-size: 20px;
      }
@@ -877,7 +898,7 @@ display: none;
           right: 7px;
           margin-right: 0;
           width: 71%;
-          height: 52px;
+          height: 62px;
           border: 1px solid #f2f2f2;
           font-size: 15px;
           font-weight: bold;
@@ -908,13 +929,20 @@ display: none;
           margin-left: -55px;
           flex-direction: column;
           flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+
+          }
+     .detailcard{
+          margin-right:70px 
      }
-     .family{
-          margin-left: 0;
+     .detailcard p {
+          font-size: 0,7rem;
      }
-     
-}
-@media  screen and (max-width:320px) {
+
+     }  
+
+@media  only screen and (max-width:320px) {
      .mainnav .active::after{
           margin-left: -100px;
      }
@@ -942,7 +970,7 @@ display: none;
      
 }
      
-@media screen and (max-width: 280px) {
+@media only screen and (max-width: 280px) {
      .mainnav {
           margin-left: -14px;
      }
