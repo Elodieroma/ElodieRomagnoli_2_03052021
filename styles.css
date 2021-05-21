@@ -568,7 +568,7 @@ footer h3{
      .searchbutton{
           position: relative;
           bottom: 50px;
-          left: 40px;
+          left: 430px;
           display: block;
           background-color:#0065fc;
           height: 50px;
@@ -600,8 +600,12 @@ footer h3{
      .filter-cat{
           display: block;
           margin: 10px 2px;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
           
      }
+
      .group
      {display: flex ;
           flex-direction: column-reverse;
@@ -654,6 +658,9 @@ footer h3{
       margin: 15px;
       padding: 15px;
  }
+ .searchtext{
+      position: relative;
+ }
  .mainnav .active:hover,
  .mainnav .activ:hover{
       border-top: none;
@@ -680,6 +687,7 @@ footer h3{
  }
  .mainnav .active{
       display: none;
+ 
  }
 
  .activelist{
@@ -758,7 +766,7 @@ display: none;
      width: 160px;
 }
 .family{
-     margin-left: 170px;
+     margin-left: 10px;
      margin-bottom: 0px;
 }
 .textfilt{
@@ -888,8 +896,8 @@ display: none;
 }
 }
 
-   
-@media only screen and (max-width:375px) {
+@media only screen and (max-width: 346px) {
+
      .searchtext h1{
           font-size: 20px;
      }
@@ -931,6 +939,7 @@ display: none;
           flex-wrap: wrap;
           align-items: center;
           justify-content: space-between;
+          padding-right: 17px;
 
           }
      .detailcard{
@@ -939,8 +948,29 @@ display: none;
      .detailcard p {
           font-size: 0,7rem;
      }
+     .eco{
+          width: 120px;
+     }
+     .family{
+          width: 100px;
+
+          margin-left: 70px;
+          margin-bottom: 30px;
+          padding-right: 40px;
 
      }  
+     .love{
+          width: 100px;
+     }
+     .animal{
+          width: 100px;
+          padding-right: 17px;
+     
+     }
+     }
+
+   
+
 
 @media  only screen and (max-width:320px) {
      .mainnav .active::after{
