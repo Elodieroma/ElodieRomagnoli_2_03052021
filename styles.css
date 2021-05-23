@@ -598,10 +598,10 @@ footer h3{
           margin-top: -20px;
      }
      .filter-cat{
-          display: block;
+          display: flex;
           margin: 10px 2px;
           text-align: center;
-          justify-content: center;
+
           align-items: center;
           
      }
@@ -666,6 +666,11 @@ footer h3{
       border-top: none;
 
  }
+ .mainnav{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     list-style: none;}
 
  
  nav ul li {
@@ -685,10 +690,8 @@ footer h3{
       display: block;
       margin-top: 35px;
  }
- .mainnav .active{
-      display: none;
  
- }
+ 
 
  .activelist{
       text-align: center ;
@@ -875,15 +878,14 @@ display: none;
      
 }
 .carte{
-     margin-bottom: 190px;
-     height: 70px;
+     margin-bottom: 25px;
 }
 .nameactivity{
      padding: 20px 0 15px 20px;
      border-radius: 0 0 1,25rem 1,25rem;
      border-color: transparent;
-     box-shadow: 0 0 6px 3px #d8d7d7;
-     margin-top: -12px;
+     box-shadow: #d8d7d7;
+
 }
 .footernav{
      flex-direction: column;
@@ -896,11 +898,15 @@ display: none;
 }
 }
 
-@media only screen and (max-width: 346px) {
+@media only screen and (max-width: 480px) {
 
      .searchtext h1{
           font-size: 20px;
      }
+     .detailcard h3{
+          font-size: 0,7rem;
+     }
+
      .search .searchbuttontext{
           position: relative;
           right: 7px;
@@ -915,6 +921,9 @@ display: none;
      .mainnav .active::after {
           margin-left: -55px;
 
+     }
+     .mainnav .active{
+          display: block;
      }
      .searchbutton{
           position: relative;
@@ -943,7 +952,8 @@ display: none;
 
           }
      .detailcard{
-          margin-right:70px 
+          margin-right:10px 
+
      }
      .detailcard p {
           font-size: 0,7rem;
@@ -967,7 +977,12 @@ display: none;
           padding-right: 17px;
      
      }
+     .detailcard {display: flex;
+     flex-direction: column;
+     margin-top: -133px;
+     margin-left: 150px;
      }
+}
 
    
 
