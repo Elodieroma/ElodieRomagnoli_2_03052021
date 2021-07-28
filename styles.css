@@ -37,8 +37,6 @@ header{
 }
 .logo{
      float: left;
-     height: 50px;
-     width: 50px;
 }
 .list{
      display: flex;
@@ -68,27 +66,29 @@ header{
      color: #0065fc;
      text-decoration: none;
 }
-.mainnav .active{
-     padding: 65px 30px 10px;
-     color: #0065fc;
+.mainnav .acti{
+     border-top: 2px solid #fff;
+     padding: 63px 30px 10px;
 }
-.mainnav .active{
-     border-top: 2px solid #0065fc;
-}
-.mainnav .activ{
-     padding: 65px 40px 10px;
-}
-.mainnav .activ:hover{
-     border-top: 2px solid #0065fc;
+
+.mainnav .acti:hover{
+  color:#0065fc;
+  border-color: #0065fc;
+
 }
 
 
 
 
 /* CHAMP SEARCH*/
+.louperechercher {
+     display: none;
+}
 #search{
      margin: 0;
      padding: 0;
+     margin-right: 20px;
+     margin-left: 20px;
 }
 .searchtext{
      position: relative;
@@ -119,15 +119,16 @@ header{
      right: 5px;
      width: 240px;
      height: 50px;
-     border: 1px solid #f2f2f2;
+     border: 0px solid #f2f2f2;
      font-size: 18px;
      color: #000;
      font-weight: bold;
      padding-left: 18px;
 }
 .searchbuttontext{
-     margin-left: -10px;
-     width: 130px;
+
+     padding-left: 20px;
+     padding-right: 20px;
      height: 50px;
      font-size: 17px;
      font-weight: 600;
@@ -142,8 +143,11 @@ header{
  .search, .searchbuttontext:focus{
       outline: none;
  }
- .searchbutton{
-      display: none;
+ .textrechercher{
+      display: hidden;
+ }
+ .search {
+      font-weight: bold;
  }
  
 /*--filtres--*/
@@ -161,16 +165,19 @@ header{
 }
 
 .filters{
-     display: flex;
+     display:flex;
+     flex-wrap: wrap;
 }
 .filter-cat{
-     margin-left: 20px;
+
      border: 2px solid #d9d9d9;
      border-radius: 30px;
      height: 50px;
      border-left: none ;
      display: flex;
      align-items: center;
+     padding-right: 10px;
+     margin: 20px 0 0 40px;
 }
 .filter-cat:hover{
      background:#deebff ;
@@ -200,18 +207,6 @@ header{
 .textfilt:hover{
      color: #0065fc;
 }
-.eco{
-     width: 185px;
-}
-.family{
-     width: 150px;
-}
-.love{
-     width: 175px;
-}
-.animal{
-     width: 225px;
-}
 
  
 /*--section1INFO--*/
@@ -225,8 +220,7 @@ header{
 .searchresulticon .info {
      border: 2px solid #f2f2f2;
      border-radius: 50%;
-     width: 30px;
-     height: 30px;
+     width: 40px;
      line-height: 35px;
      text-align: center ;
      color: #0065fc;
@@ -253,7 +247,8 @@ header{
      background-color: #f2f2f2;
      flex: 100%;
      margin: 0 auto;
-     padding: 25px 20px;
+     margin-left: 40px;
+     padding: 25px 20px 25px 15px;
      border-radius: 15px;
 }
 
@@ -348,11 +343,11 @@ header{
 
 /*POPULAR*/
 .hebergementpopular{
-     height: 230px;
+
      background-color: #f2f2f2;
      border-radius: 10px;
-     margin-left: 30px;
-     padding: 20px 40px;
+     margin: 0px 35px 0px 35px;
+     padding: 20px 35px 20px 35px;
 }
 .asidetitle{
      display: flex;
@@ -394,13 +389,14 @@ header{
 }
 .popularelement{
      text-decoration: none;
+
 }
 
 .detailcard{
      display: flex;
      flex-direction: column;
      margin-top: -133px;
-     margin-left: 150px;
+     margin-left: 160px;
 }
 .detailcard h3
 {  font-size: 16px;
@@ -540,533 +536,424 @@ footer h3{
 
 
       /*MEDIA QUERIES*/
-
-@media only screen and (max-width: 1280px){
      
-     .hebergementscontainer
-     { grid-template: repeat(3,1fr) / repeat(2, 1fr) ;
-          margin: 30px 15px 10px 10px;
-          height: 630px;
+     
+     
+     @media only screen and (max-width: 1024px) {
+          
+          .searchbutton{
+               position: relative;
+               bottom: 50px;
+               left: 430px;
+               display: block;
+               background-color:#0065fc;
+               height: 50px;
+               width: 50px;
+               border-radius: 10px;
+               line-height: 50px;
+               border: none;
+               cursor: pointer;
+          }
+          .icongps .search{
+               position: relative;
+               right: 5px;
+               margin-right: 0;
+               width: 40%;
+               height: 50px;
+               border: 1px solid #f2f2f2;
+               font-size: 18px;
+               border-top-right-radius: 10px ;
+               border-bottom-right-radius: 10px;
+          }
+          .iconsearch{
+               color:#fff;
+               font-size: 15px;
+          }
+          .searchfilters{
+               display: inline-block;
+          }
+     
+          .group
+          {display: flex ;
+               flex-direction: column-reverse;
+     
+          }
+          .hebergementscontainer{
+               background-color: #f2f2f2;
+          }
+          .hebergementpopular
+          
+          {    background-color: #f2f2f2;
+               width: 100%;
+               margin-bottom: 40px;
+               margin-left: 6px;
+          }
+          .popularcard{
+               width: 100%;
+          }
+          .popularcard img{
+               width: 30%;
+          }
+          /*.details{
+               margin-left: 50%;
+          }*/
+          .carte{
+               background-color: #fff;
+          }
+          .nameactivity{
+               font-size: 12px;
+               padding: 8px 0 15px 5px;
+          }
+          .location1and4{
+               height: 369px;
+          }
+          .link{
+               font-size: 15px;
+          }
+          .footerdescriptlogt{
+               margin-left: 80px;
+          }
+          .footerassist{
+               margin-left: 80px;
+          }
+     
      }
-     .hebergementpopular{
-          height: 630px;
+     
+     @media only screen and (max-width:768px)
+     {
+      header{
+           margin: 15px;
+           padding: 15px;
+      }
+      .searchtext{
+           position: relative;
+      }
+
+     .searchchamp{
           margin-top: 30px;
-     }
      
-     .popularcard{
-          margin: 30px 5px 0;
-
      }
-
-}
-
-@media only screen and (max-width: 1024px) {
-     
+     .textrechercher{
+          display:none;
+     }
+     .louperechercher{
+          display:block;
+     }
      .searchbuttontext{
-          display: none;
+          border-radius: 15px;
      }
      .searchbutton{
           position: relative;
           bottom: 50px;
-          left: 430px;
+          left: 55%;
           display: block;
-          background-color:#0065fc;
+          background-color: #0065fc;
           height: 50px;
-          width: 50px;
           border-radius: 10px;
           line-height: 50px;
           border: none;
           cursor: pointer;
+
+     }
+     .iconsearch{
+          color: #fff;
+          font-size: 15px;
      }
      .icongps .search{
           position: relative;
           right: 5px;
           margin-right: 0;
-          width: 40%;
+          width: 55%;
           height: 50px;
           border: 1px solid #f2f2f2;
           font-size: 18px;
-          border-top-right-radius: 10px ;
-          border-bottom-right-radius: 10px;
+          font-weight: bold;
+     
      }
-     .iconsearch{
-          color:#fff;
-          font-size: 15px;
+     .searchresulticon{
+          margin-top: 29px;
+     
      }
      .searchfilters{
           display: inline-block;
           margin-top: -20px;
      }
-     .filter-cat{
-          display: flex;
-          margin: 10px 2px;
-          text-align: center;
-
-          align-items: center;
-          
+     .textfilt{
+          font-size: 13px;
      }
-
-     .group
-     {display: flex ;
+     /*.searchresulticon .info{
+          width: 20px;
+          height: 20px;
+          line-height: 25px ;
+          font-size: 10px;
+          
+     }*/
+     .searchresulticon p {
+          font-size: 14px;
+     }
+     .inscription{
+          display: flex;
+          flex-direction: row-reverse;
+          left: 25px;
+          text-decoration: none;
+          color: #0065fc;
+          font-weight: bold;
+     }
+     .main{
+          padding: 0px;
+     }
+     .group{
+          display: flex;
           flex-direction: column-reverse;
-
+          align-items: normal;
      }
      .hebergementscontainer{
-          background-color: #f2f2f2;
+          background-color: #fff;
+          padding: 0 0 10px 0;
      }
-     .hebergementpopular
-     
-     {    background-color: #f2f2f2;
-          width: 95px;
-          margin-bottom: 40px;
-          margin-left: 6px;
+     .hebergementscontainer h2{
+          margin-left: 20px;
+     }
+     .hebergementcard{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          background-color: #fff;
+     }
+     .hebergementelement{
+          flex: 0;
+          flex-direction: column;
+          width: auto;
+     }
+     .hebergementmainstar{
+          margin-bottom: 20px;
+     }
+     .details{
+          margin-left: 0%;
+     }
+     .mainafficherplus{
+          margin-top: 35px;
+     }
+     .hebergementpopular{
+          width: 100%;
+          margin-bottom: 50px;
+          margin-left: 0px;
      }
      .popularcard{
           width: 100%;
      }
      .popularcard img{
-          width: 30%;
+          width: 35%;
      }
-     .details{
-          margin-left: 50%;
-     }
-     .carte{
-          background-color: #fff;
-     }
-     .nameactivity{
-          font-size: 12px;
-          padding: 8px 0 15px 5px;
-     }
-     .location1and4{
-          height: 369px;
-     }
-     .link{
-          font-size: 15px;
-     }
-     .footerdescriptlogt{
-          margin-left: 80px;
-     }
-     .footerassist{
-          margin-left: 80px;
-     }
-
-}
-
-@media only screen and (max-width:768px)
-{
- header{
-      margin: 15px;
-      padding: 15px;
- }
- .searchtext{
-      position: relative;
- }
- .mainnav .active:hover,
- .mainnav .activ:hover{
-      border-top: none;
-
- }
- .mainnav{
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
-     list-style: none;}
-
- 
- nav ul li {
-      border-bottom: 2px solid #f2f2f2;
-      padding-bottom: 15px;
-
- }
- .mainnav{
-      flex-grow: 1;
-      order: 3;
-      width: 100%;
-      margin-right: -35px;
-      margin-left: -35px;
-      margin-bottom: 20px;
- }
- .mainnav li{
-      display: block;
-      margin-top: 35px;
- }
- 
- 
-
- .activelist{
-      text-align: center ;
-      width: 100%;
-      padding-bottom: 15px;
-      padding-top: 25px;
- }
-.activelist:hover{
-     color: #0065fc;
-     border-top: none;
-     border-bottom: 2px solid #0065fc;
-
-}
-.list{
-     display: block;
-}
-.inscription{
-     margin-top: 30px;
-}
-.searchchamp{
-     margin-top: 30px;
-
-}
-.searchbuttontext{
-display: none;
-}
-.searchbutton{
-     position: relative;
-     bottom: 50px;
-     left: 55%;
-     display: block;
-     background-color: #0065fc;
-     height: 50px;
-     border-radius: 10px;
-     line-height: 50px;
-     border: none;
-     cursor: pointer;
-}
-.iconsearch{
-     color: #fff;
-     font-size: 15px;
-}
-.icongps .search{
-     position: relative;
-     right: 5px;
-     margin-right: 0;
-     width: 55%;
-     height: 50px;
-     border: 1px solid #f2f2f2;
-     font-size: 18px;
-     font-weight: bold;
-
-}
-.searchresulticon{
-     margin-top: 29px;
-
-}
-.searchfilters{
-     display: inline-block;
-     margin-top: -20px;
-}
-.filters{
-     display: flex;
-     align-items:center;
-     justify-content: space-between;
-     flex-wrap: wrap;
-}
-.filter-cat{
-     display: flex;
-     margin: 20px 0 0;
-
-
-}
-.eco{
-     width: 160px;
-}
-.family{
-     margin-left: 10px;
-     margin-bottom: 0px;
-}
-.textfilt{
-     font-size: 13px;
-}
-.searchresulticon .info{
-     width: 20px;
-     height: 20px;
-     line-height: 25px ;
-     font-size: 10px;
+     .detailcard{
+          font-size: 0,6rem;
+          margin-left: 270px;
      
-}
-.searchresulticon p {
-     font-size: 14px;
-}
-.inscription{
-     display: flex;
-     flex-direction: row-reverse;
-     position: relative;
-     bottom: 150px;
-     left: 25px;
-     text-decoration: none;
-     color: #0065fc;
-     font-weight: bold;
-}
-.main{
-     padding: 0px;
-}
-.group{
-     display: flex;
-     flex-direction: column-reverse;
-     align-items: normal;
-}
-.hebergementscontainer{
-     background-color: #fff;
-     padding: 0 0 10px 0;
-}
-.hebergementscontainer h2{
-     margin-left: 20px;
-}
-.hebergementcard{
-     display: flex;
-     flex-direction: column;
-     padding: 0;
-     background-color: #fff;
-}
-.hebergementelement{
-     flex: 0;
-     flex-direction: column;
-     width: auto;
-}
-.hebergementmainstar{
-     margin-bottom: 20px;
-}
-.details{
-     margin-left: 0%;
-}
-.mainafficherplus{
-     margin-top: 35px;
-}
-.hebergementpopular{
-     width: 100%;
-     margin-bottom: 50px;
-     margin-left: 0px;
-}
-.popularcard{
-     width: 100%;
-}
-.popularcard img{
-     width: 35%;
-}
-.detailcard{
-     font-size: 0,6rem;
-     margin-left: 270px;
-
-}
-.detailcard h3{
-     font-size: 0,7rem;
-}
-.detailcard p {
-     font-size: 0,7rem;
-}
-.popularmainstar{
-     margin-bottom: 25%;
-}
-.activitytitle{
-     margin: 100px 0px 30px;
-}
-.groupecardactivity{
-     display: grid;
-     height: auto;
-     margin-bottom: 25px;
-     justify-content: normal;
-}
-.blocactivity{
-     width: auto;
-}
-.location1and4{
-     border-radius: 10px;
-}
-.carte img{
-     width: 100%;
-     height: 200px;
-
-     
-     
-}
-.carte{
-     margin-bottom: 25px;
-}
-.nameactivity{
-     padding: 20px 0 15px 20px;
-     border-radius: 0 0 1,25rem 1,25rem;
-     border-color: transparent;
-     box-shadow: #d8d7d7;
-
-}
-.footernav{
-     flex-direction: column;
-     padding: 0 15px;
-}
-.footerdescript, .footerdescriptlogt, .footerassist{
-     width: 100%;
-     padding: 0;
-     margin: 0;
-}
-}
-
-@media only screen and (max-width: 480px) {
-
-     .searchtext h1{
-          font-size: 20px;
      }
      .detailcard h3{
           font-size: 0,7rem;
      }
-
-     .search .searchbuttontext{
-          position: relative;
-          right: 7px;
-          margin-right: 0;
-          width: 71%;
-          height: 62px;
-          border: 1px solid #f2f2f2;
-          font-size: 15px;
-          font-weight: bold;
-
-     }
-     .mainnav .active::after {
-          margin-left: -55px;
-
-     }
-     .mainnav .active{
-          display: block;
-     }
-     .searchbutton{
-          position: relative;
-          display: block;
-          bottom: 55px;
-          left: 85%;
-          background-color: #0065fc ;
-          height: 45px;
-          width: 45px;
-          border-radius: 10px;
-          line-height: 40px;
-          border: none;
-          cursor: pointer;
-
-
-
-     }
-     .filters{
-          display: flex;
-          margin-left: -55px;
-          flex-direction: column;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: space-between;
-          padding-right: 17px;
-
-          }
-     .detailcard{
-          margin-right:10px 
-
-     }
      .detailcard p {
           font-size: 0,7rem;
      }
-     .eco{
-          width: 120px;
+     .popularmainstar{
+          margin-bottom: 25%;
      }
-     .family{
-          width: 100px;
-
-          margin-left: 70px;
-          margin-bottom: 30px;
-          padding-right: 40px;
-
-     }  
-     .love{
-          width: 100px;
+     .activitytitle{
+          margin: 100px 0px 30px;
      }
-     .animal{
-          width: 100px;
-          padding-right: 17px;
-     
+     .groupecardactivity{
+          display: grid;
+          height: auto;
+          margin-bottom: 25px;
+          justify-content: normal;
      }
-     .detailcard {display: flex;
-     flex-direction: column;
-     margin-top: -133px;
-     margin-left: 150px;
+     .blocactivity{
+          width: auto;
      }
-}
-
-   
-
-
-@media  only screen and (max-width:320px) {
-     .mainnav .active::after{
-          margin-left: -100px;
-     }
-     
-     .mainnav .activ::after{
-          margin-left: -60px;
-     }
-     .searchbutton{
-          position: relative;
-          bottom: 45px;
-          left: 83%;
-          display: block;
-          background-color: #0065fc;
-          height: 45px;
-          width: 40px;
+     .location1and4{
           border-radius: 10px;
-          line-height: 45px;
-          border: none;
-          cursor: pointer;
      }
-     .filters{
-          margin-left: 20px;
+     .carte img{
+          width: 100%;
+          height: 200px;
+     
+          
+          
+     }
+     .carte{
+          margin-bottom: 25px;
+     }
+     .nameactivity{
+          padding: 20px 0 15px 20px;
+          border-radius: 0 0 1,25rem 1,25rem;
+          border-color: transparent;
+          box-shadow: #d8d7d7;
+     
+     }
+     .footernav{
+          flex-direction: column;
+          padding: 0 15px;
+     }
+     .footerdescript, .footerdescriptlogt, .footerassist{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+     }
      }
      
+     @media only screen and (max-width: 480px) {
      
-}
+          .searchtext h1{
+               font-size: 20px;
+          }
+          .detailcard h3{
+               font-size: 0,7rem;
+          }
+          .ensemble{
+               padding-left: 0px;
+               padding-right: 0px;
+          }
      
-@media only screen and (max-width: 280px) {
-     .mainnav {
-          margin-left: -14px;
-     }
-     .mainnav .active::after{
-          margin-left: -55px;
-     }
-     .mainnav .activ::after{
-          margin-left: -35px;
-     }
-     .searchtext{
-          position: relative;
-          top: 0;
-     }
-     .searchbutton{
-          height: 45px;
-          width: 45px;
-          border-radius: 10px;
-          line-height: 30px;
-     }
-      .search .searchbuttontext{
-           font-size: 12px;
-      }
-      .searchchamp{
-           margin-top: 28px;
-      }
-      .searchresulticon{
-           margin-top: 30px;
-      }
-      .detailcard h3, .detailcard {
-           font-size: 0,7rem;
-      }
-      .detailcard p{
-           margin-bottom: 0;
-      }
-      .asidetitle{
-           font-size: 17px;
-      }
-      .hebergementscontainer h2{
-           font-size: 17px;
-
-      }
-      .activitytitle{
-
-          font-size: 17px;
-      }
-
-      }
-
-
-
+     .search .searchbuttontext{
+               position: relative;
+               right: 7px;
+               margin-right: 0;
+               width: 71%;
+               height: 62px;
+               border: 1px solid #f2f2f2;
+               font-size: 15px;
+               font-weight: bold;
      
+          }
+     
+          
+          .mainnav .acti::after {
+               margin-left: -55px;
+     
+          }
+          .mainnav .acti{
+          
+               padding:0px;
+               padding-bottom: 15px;
+               width: 100%;
+
+
+          }
+          .mainnav .actilist:hover{
+               color:#0065fc;
+               border-color: #0065fc;
+             
+             }.mainnav .acti{
+               border-top: 2px solid #fff;
+               padding:  0px 63px 30px 10px;
+          }
+
+          
+          .mainnav .acti:hover{
+            color:#0065fc;
+            border-color: #0065fc;
+          
+          }
+
+
+             
+          .mainnav{
+               width: 100%;
+               margin-right: 0px;
+               margin-left: 0px;
+               padding: 25px;
+          }
+          .list{
+               width: 100%;
+               display: flex;
+               flex-direction: column-reverse;
+          }
+          .inscription{
+               margin: 0px;
+               padding: 0px;
+          }
+          header{
+               margin: 0px;
+               padding: 0px;
+               margin-top: 20px;
+          }
+          .searchbutton{
+               position: relative;
+               display: block;
+               bottom: 55px;
+               left: 87%;
+               background-color: #0065fc ;
+               height: 45px;
+               width: 45px;
+               border-radius: 10px;
+               line-height: 40px;
+               border: none;
+               cursor: pointer;
+          
+          }
+          .detailcard{
+               margin-right:10px 
+     
+          }
+          .detailcard p {
+               font-size: 0,7rem;
+          }
+         
+          .detailcard {display: flex;
+          flex-direction: column;
+          margin-top: -133px;
+          margin-left: 150px;
+          }
+          .searchfilters{
+               display: inline-block;
+               margin-top: 0px;
+          }
+          .logo{
+               float: left;
+               height: 80px;
+               width: 80px;
+               position: absolute;
+               top: 0;
+               margin-left: 20px;
+          }
+          .inscription a{
+               margin-bottom: 10px;
+               margin-top: 10px;
+          }
+          .hebergementscontainer{
+               padding: 25px;
+          }
+     #activity{
+          margin: 15px;
+          
+     }
+     .hebergementcard{
+          margin-right: 15px;
+          margin-left: -5px;
+     }
+     .icongps{
+          width: 400px;
+     }
+     .searchbuttontext{
+          position:relative;
+          right:20px;
+     }
+     .searchfilters h2{
+          margin-top: 30px;
+     }
+     .filter-cat{
+          margin: 20px 0px 0px 30px;
+     }
+
+     }
+     
+        
+  
+
+
+
+
 
 
 
