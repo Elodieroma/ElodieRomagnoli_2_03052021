@@ -391,15 +391,17 @@ header{
 }
 .popularelement{
      text-decoration: none;
+     display: flex;
 
 }
 
 .detailcard{
      display: flex;
      flex-direction: column;
-     margin-top: -133px;
-     margin-left: 160px;
+     margin-top: 15px;
+     margin-left: 15px;
 }
+
 .detailcard h3
 {  font-size: 16px;
      margin-bottom: 5px;
@@ -687,13 +689,7 @@ footer h3{
      .textfilt{
           font-size: 13px;
      }
-     /*.searchresulticon .info{
-          width: 20px;
-          height: 20px;
-          line-height: 25px ;
-          font-size: 10px;
-          
-     }*/
+    
      .searchresulticon p {
           font-size: 14px;
      }
@@ -716,20 +712,23 @@ footer h3{
      .hebergementscontainer{
           background-color: #fff;
           padding: 0 0 10px 0;
+          margin: 0px;
      }
      .hebergementscontainer h2{
-          margin-left: 20px;
+          margin: 18px 25px 0px 35px;
      }
      .hebergementcard{
           display: flex;
           flex-direction: column;
           padding: 0;
           background-color: #fff;
+          margin-left: 12px;
+          margin-right: 12px;
      }
      .hebergementelement{
           flex: 0;
           flex-direction: column;
-          width: auto;
+          width: 93%;
      }
      .hebergementmainstar{
           margin-bottom: 20px;
@@ -739,6 +738,7 @@ footer h3{
      }
      .mainafficherplus{
           margin-top: 35px;
+          margin-left: 35px;
      }
      .hebergementpopular{
           width: 100%;
@@ -753,7 +753,6 @@ footer h3{
      }
      .detailcard{
           font-size: 0,6rem;
-          margin-left: 270px;
      
      }
      .detailcard h3{
@@ -766,16 +765,18 @@ footer h3{
           margin-bottom: 25%;
      }
      .activitytitle{
-          margin: 100px 0px 30px;
+          margin: 100px 0px 30px 9px;
      }
      .groupecardactivity{
           display: grid;
           height: auto;
           margin-bottom: 25px;
           justify-content: normal;
+          margin-left: 12px;
+          
      }
      .blocactivity{
-          width: auto;
+          width: 95%;
      }
      .location1and4{
           border-radius: 10px;
@@ -806,12 +807,18 @@ footer h3{
           padding: 0;
           margin: 0;
      }
+     .list{
+          margin-top: 35px;
+     }
+     .acti{
+          padding-top: 10px;
+     }
      }
      
      @media only screen and (max-width: 480px) {
      
           .searchtext h1{
-               font-size: 20px;
+               font-size: 25px;
           }
           .detailcard h3{
                font-size: 0,7rem;
@@ -853,6 +860,7 @@ footer h3{
              }.mainnav .acti{
                border-top: 2px solid #fff;
                padding:  0px 63px 30px 10px;
+               border-bottom: 3px solid grey;
           }
 
           
@@ -869,6 +877,8 @@ footer h3{
                margin-right: 0px;
                margin-left: 0px;
                padding: 25px;
+               padding-left: 0px;
+               padding-right: 0px;
           }
           .list{
                width: 100%;
@@ -908,8 +918,6 @@ footer h3{
          
           .detailcard {display: flex;
           flex-direction: column;
-          margin-top: -133px;
-          margin-left: 150px;
           }
           .searchfilters{
                display: inline-block;
@@ -929,6 +937,7 @@ footer h3{
           }
           .hebergementscontainer{
                padding: 25px;
+               margin: 0px;
           }
      #activity{
           margin: 15px;
@@ -954,6 +963,37 @@ footer h3{
      .nameactivity{
           font-size: 16px;
 
+     }
+     .hebergementpopular{
+          margin-bottom: 0px;
+     }
+     .hebergementscontainer h2{
+          font-size: 21px;
+          margin-left: 15px;
+     }
+     .activitytitle{
+          margin-top: 30px;
+          margin-left: 0px;
+          font-size: 22px;
+     }
+     .mainafficherplus{
+          margin-left: 15px;
+     }
+     .searchtext{
+          margin-top: 25px;
+     }
+     .groupecardactivity{
+          margin-bottom: 0px;
+          margin-left: 8px;
+     }
+     .hebergementpopular{
+          padding-bottom: 40px;
+     }
+     .searchresulticon{
+          margin-bottom: 60px;
+     }
+     .mainnav li{
+          width: 50%;
      }
 
      }
