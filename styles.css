@@ -37,6 +37,7 @@ header{
 }
 .logo{
      float: left;
+     margin-left: 20px;
 }
 .list{
      display: flex;
@@ -492,10 +493,10 @@ color: #000;
      font-size: 13px;
 }
 .activity2{
-     margin: 0 0 46px;
+     margin: 0 0 50px;
 }
 .activity5{
-     margin: 0 0 47px;
+     margin: 0 0 50px;
 }
 #activity{
      padding-top: 50px;
@@ -547,7 +548,7 @@ footer h3{
      
      
      
-     @media only screen and (max-width: 1024px) {
+     @media only screen and (max-width: 1200px) {
           
           .searchbutton{
                position: relative;
@@ -608,10 +609,7 @@ footer h3{
           .carte{
                background-color: #fff;
           }
-          .nameactivity{
 
-               padding: 8px 0 15px 5px;
-          }
           .location1and4{
                height: 369px;
           }
@@ -624,10 +622,11 @@ footer h3{
           .footerassist{
                margin-left: 80px;
           }
+          
      
      }
      
-     @media only screen and (max-width:768px)
+     @media only screen and (max-width:810px)
      {
       header{
            margin: 15px;
@@ -812,7 +811,61 @@ footer h3{
      }
      .acti{
           padding-top: 10px;
+          border-top: none;
+     } 
+     .mainnav .acti{
+          border-top: none;
+          padding-bottom: 10px;
      }
+     .inscription{
+          margin: 0px;
+          padding: 0px;
+     } 
+     .mainnav li{
+          width: 50%;
+     }
+     .mainnav{
+          width: 100%;
+          margin-right: 0px;
+          margin-left: 0px;
+          padding: 25px;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 55px;
+     } 
+     header{
+          margin: 0px;
+          padding: 0px;
+          margin-top: 20px;
+     }
+     .logo{
+          float: left;
+          height: 80px;
+          width: 80px;
+          position: absolute;
+          top: 0;
+          margin-left: 20px;
+     }
+     .list{
+          width: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+          margin-top: 0px;
+     }
+     .actilist {
+          border-bottom: 2px solid #d9d9d9;
+          padding-bottom: 10px;
+     }
+     .ensemble{
+          padding: 0px;
+     }
+     .actilist:hover{ border-color: #0065fc;
+
+     }
+     .searchfilters h2 {
+          margin-top: 55px;
+     }
+
      }
      
      @media only screen and (max-width: 480px) {
@@ -845,55 +898,31 @@ footer h3{
                margin-left: -55px;
      
           }
-          .mainnav .acti{
-          
-               padding:0px;
-               padding-bottom: 15px;
-               width: 100%;
-
-
-          }
+     
           .mainnav .actilist:hover{
                color:#0065fc;
                border-color: #0065fc;
              
              }.mainnav .acti{
-               border-top: 2px solid #fff;
-               padding:  0px 63px 30px 10px;
-               border-bottom: 3px solid grey;
+               
+               padding:  0px 63px 30px 30px;
+               border-top: 0px;
+               width: 100%;
           }
 
           
           .mainnav .acti:hover{
             color:#0065fc;
-            border-color: #0065fc;
+           
           
           }
 
 
              
-          .mainnav{
-               width: 100%;
-               margin-right: 0px;
-               margin-left: 0px;
-               padding: 25px;
-               padding-left: 0px;
-               padding-right: 0px;
-          }
-          .list{
-               width: 100%;
-               display: flex;
-               flex-direction: column-reverse;
-          }
-          .inscription{
-               margin: 0px;
-               padding: 0px;
-          }
-          header{
-               margin: 0px;
-               padding: 0px;
-               margin-top: 20px;
-          }
+          
+          
+         
+         
           .searchbutton{
                position: relative;
                display: block;
@@ -923,14 +952,7 @@ footer h3{
                display: inline-block;
                margin-top: 0px;
           }
-          .logo{
-               float: left;
-               height: 80px;
-               width: 80px;
-               position: absolute;
-               top: 0;
-               margin-left: 20px;
-          }
+          
           .inscription a{
                margin-bottom: 10px;
                margin-top: 10px;
@@ -992,9 +1014,12 @@ footer h3{
      .searchresulticon{
           margin-bottom: 60px;
      }
-     .mainnav li{
-          width: 50%;
+    
+     .acti{
+          margin-left: 30px;
+          
      }
+     
 
      }
      
