@@ -128,7 +128,7 @@ header{
      width: 52px;
      line-height: 50px;
      text-align: center;
-     font-size: 1,1em;
+     font-size: 1.1em;
      border-top-left-radius: 15px;
      border-bottom-left-radius: 15px;
 }
@@ -829,16 +829,16 @@ footer h3{
           }
           
           .detailcard{
-               font-size: 0,6rem;
+               font-size: 0.6rem;
      
           }
           
           .detailcard h3{
-               font-size: 0,7rem;
+               font-size: 0.7rem;
           }
           
           .detailcard p {
-               font-size: 0,7rem;
+               font-size: 0.7rem;
           }
           
           .popularmainstar{
@@ -876,7 +876,7 @@ footer h3{
           
           .nameactivity{
                padding: 20px 0 15px 20px;
-               border-radius: 0 0 1,25rem 1,25rem;
+               border-radius: 0rem 0rem 1.25rem 1.25rem;
                border-color: transparent;
                box-shadow: #d8d7d7;
           }
@@ -975,7 +975,7 @@ footer h3{
           }
           
           .detailcard h3{
-               font-size: 0,7rem;
+               font-size: 0.7rem;
           }
           
           .ensemble{
@@ -1037,7 +1037,7 @@ footer h3{
           }
           
           .detailcard p {
-               font-size: 0,7rem;
+               font-size: 0.7rem;
           }
          
           .detailcard {
